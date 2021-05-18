@@ -7,6 +7,8 @@ namespace SimpleAPI.Test
         [SetUp]
         public void Setup()
         {
+            var x = "";
+            
         }
 
         [Test]
