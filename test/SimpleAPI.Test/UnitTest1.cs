@@ -8,13 +8,13 @@ namespace SimpleAPI.Test
         public void Setup()
         {
             var x = "";
-            
+
         }
 
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            Assert.Fail("This test failed");
         }
     }
 }
