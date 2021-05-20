@@ -25,7 +25,7 @@ namespace SimpleAPI.Test
         [Test]
         public void WeatherForecastController_Get_Returns5()
         {
-            var expectedCount = 5;
+            var expectedCount = 6;
             var result = (WeatherForecast[]) controller.Get();
 
             Assert.AreEqual(expectedCount, result.Length);
