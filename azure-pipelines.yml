@@ -1,5 +1,5 @@
 trigger:
-- master
+- masterd
 
 pool:
   vmImage: 'windows-latest'
@@ -14,9 +14,9 @@ stages:
   jobs:
   - job: BuildJob
     steps:
-  - task: DotNetCoreCLI@2
-    inputs:
-      command: 'build'
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'build'
     - script: echo Building!
 - stage: Test
   jobs:
