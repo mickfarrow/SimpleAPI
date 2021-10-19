@@ -15,4 +15,4 @@ stages:
   - job: BuildJob
     steps:
     - script: "echo My secret is '$(secretvalue)'!"
-    - script: "echo My shared secret is '$[variables.shared-secret]'!"
+    - script: "echo My shared secret is '$[shared.shared_value1]'!"
