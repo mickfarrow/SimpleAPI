@@ -14,4 +14,4 @@ stages:
   jobs:
   - job: BuildJob
     steps:
-    - script: echo Building '$(Parameters.solution)'!
+    - script: My secret is $(secretvalue)!
