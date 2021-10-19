@@ -21,5 +21,8 @@ stages:
   jobs:
   - job: BuildJob
     steps:
+    - script:  "echo ${{ variables.solution }}"
+    - script: "echo My secret is '$(secretvalue)'!"
+    - script: "echo My secret is '$(secretvalue)'!"
     - script: "echo My secret is '$(secretvalue)'!"
     - script: "echo My shared secret is '$(va)'!"
