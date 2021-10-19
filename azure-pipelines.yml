@@ -14,4 +14,4 @@ stages:
   jobs:
   - job: BuildJob
     steps:
-    - script: My secret is $(secretvalue)!
+    - script: My secret is '$(secretvalue)'!
