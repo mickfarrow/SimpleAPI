@@ -5,9 +5,16 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+  - name: solution
+    value: '**/*.sln'
+  - name : buildPlatform 
+    value: 'Any CPU'
+  - name: buildConfiguration
+    value: 'Release' 
+  - group: "Shared"
+  - name: va
+    value: $[variables.shared_value1]
+  
 
 stages:
 - stage: Build
@@ -15,4 +22,4 @@ stages:
   - job: BuildJob
     steps:
     - script: "echo My secret is '$(secretvalue)'!"
-    - script: "echo My shared secret is '$[shared.shared_value1]'!"
+    - script: "echo My shared secret is '$[variables.va]'!"
