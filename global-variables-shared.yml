@@ -1,3 +1,4 @@
-  - group: "Shared"
-  - name: va
-    value: $[variables.shared_value1]
+  variables:
+    - group: "Shared"
+    - name: va
+      value: $[variables.shared_value1]
