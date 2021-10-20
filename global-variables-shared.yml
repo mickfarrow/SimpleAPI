@@ -1,0 +1,3 @@
+  - group: "Shared"
+  - name: va
+    value: $[variables.shared_value1]
