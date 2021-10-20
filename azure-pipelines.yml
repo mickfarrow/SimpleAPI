@@ -4,14 +4,14 @@ trigger:
 pool:
   vmImage: 'windows-latest'
 
+- template: global-variables-shared.yml
+
 variables:
-  - name: solution
-    value: '**/*.sln'
-  - name : buildPlatform 
-    value: 'Any CPU'
-  - name: buildConfiguration
-    value: 'Release' 
-  - template: global-variables-shared.yml
+  
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+    
   
 
 stages:
