@@ -11,9 +11,7 @@ variables:
     value: 'Any CPU'
   - name: buildConfiguration
     value: 'Release' 
-  - group: "Shared"
-  - name: va
-    value: $[variables.shared_value1]
+  - template: global-variables-shared.yml
   
 
 stages:
